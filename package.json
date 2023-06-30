@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Simple rest api with ORM Prisma",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/tupapiloko/RestApi-NodeJs-Prisma/issues"
   },
-  "homepage": "https://github.com/tupapiloko/RestApi-NodeJs-Prisma#readme"
+  "homepage": "https://github.com/tupapiloko/RestApi-NodeJs-Prisma#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "prisma": "^4.16.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.16.1",
+    "express": "^4.18.2"
+  }
 }
